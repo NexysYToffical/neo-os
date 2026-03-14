@@ -1,0 +1,71 @@
+<style>
+    body {
+        scrollbar-width: none;
+        margin: 0px;
+        background-image: url(bg.avif);
+        background-repeat: no-repeat;
+        font-family: monospace;
+        background-size: cover;
+    }
+    clock {
+        background-color: rgba(255, 255, 255, 0.658);
+        display: block;
+        box-shadow: 10px;
+        color: rgb(0, 0, 0);
+        font-size: xx-large;
+        size: 400px;
+        padding: 20px;
+    }
+    topbar {
+        display: block;
+        width: 100%;
+        position:fixed;
+        background-color: rgba(255, 255, 255, 0.432);
+    }
+    b {
+        display: contents;
+    }
+    bottom {
+        border:black thin solid;
+        background-color: white;
+        bottom: 10%;
+        position: fixed;
+        padding: 10px;
+        left: 50%;
+    }
+    iframe {
+        border: 0px solid black;
+        position: fixed;
+        z-index: 100;
+    }
+    details {
+        bottom: 10px;
+        left: 50%;
+    }
+    button {
+        position: fixed;
+        bottom: 1px;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.555);
+        border-radius: 0px;
+        padding: 10px;
+        text-align: center;
+        border-style: solid;
+        border: 0px;
+    }
+    button:active {
+        transition: padding 0.3s ease;
+        padding: 8px;
+    }
+    notification {
+        display: grid;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.884);
+    }
+    
+</style>
+<topbar><span id="clock">00:00</span> | Carrier: <b>NeoPhone</b></topbar>
+<br>
+<notification><b>System</b><br>Welcome to your new phone!</notification>
+<a href="home.html"><button>Click to unlock</button></a>
+<script src="logic.js"></script>

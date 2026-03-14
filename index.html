@@ -1,0 +1,35 @@
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+    body {
+        margin: 0px;
+        background-color: rgb(0, 0, 0);
+        font-family: serif;
+        font-size: small;
+        color: rgb(0, 0, 0);
+    }
+    sys {
+        display: table;
+        margin: 0px;
+        background-color: black;
+        color: white;
+        padding: 0px;
+        gap: 0px;
+        row-gap: 0px;
+        z-index: 1;
+        position: fixed;
+        z-index: 1000;
+    } 
+    iframe {
+        background-color: black;
+        transition: opacity 0.3s ease;
+        z-index: 2;
+        position:fixed;
+        border: 0px solid white;
+        /* Prevents users from accidentally scrolling the whole "app" around */
+    overflow: hidden; 
+    /* Stops people from long-pressing and "selecting" your text like a webpage */
+    user-select: none;
+    -webkit-user-select: none;
+    }
+</style>
+<iframe src="boot.html" height="700px" width="400px"></iframe>
