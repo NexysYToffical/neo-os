@@ -20,11 +20,13 @@
         z-index: 1000;
     } 
     iframe {
-        background-color: black;
-        transition: opacity 0.3s ease;
-        z-index: 2;
-        position:fixed;
-        border: 0px solid white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;   /* 100% of Viewport Width */
+  height: 100vh;  /* 100% of Viewport Height */
+  border: none;
+}
         /* Prevents users from accidentally scrolling the whole "app" around */
     overflow: hidden; 
     /* Stops people from long-pressing and "selecting" your text like a webpage */
